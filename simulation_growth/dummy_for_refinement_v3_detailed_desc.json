@@ -1,0 +1,3705 @@
+[
+  {
+    "trigger_op": "test trigger v3 detailed",
+    "seek_value": "Test v3",
+    "scores": {
+      "centrality": 3.0,
+      "connectivity": 3.0,
+      "clustering": 3.0
+    },
+    "simulation_output_table": [
+      {
+        "Suggested Strategies": "Implement Polycentric Governance.",
+        "resulting_graph_demoviz": {
+          "nodes": [
+            {
+              "id": "0",
+              "label": "0",
+              "role": "initial_node"
+            },
+            {
+              "id": "1",
+              "label": "1",
+              "role": "initial_node"
+            },
+            {
+              "id": "10",
+              "label": "10",
+              "role": "initial_node"
+            },
+            {
+              "id": "11",
+              "label": "11",
+              "role": "initial_node"
+            },
+            {
+              "id": "12",
+              "label": "12",
+              "role": "initial_node"
+            },
+            {
+              "id": "13",
+              "label": "13",
+              "role": "initial_node"
+            },
+            {
+              "id": "14",
+              "label": "14",
+              "role": "initial_node"
+            },
+            {
+              "id": "15",
+              "label": "15",
+              "role": "initial_node"
+            },
+            {
+              "id": "16",
+              "label": "16",
+              "role": "initial_node"
+            },
+            {
+              "id": "17",
+              "label": "17",
+              "role": "polycentric_hub"
+            },
+            {
+              "id": "18",
+              "label": "18",
+              "role": "initial_node"
+            },
+            {
+              "id": "19",
+              "label": "19",
+              "role": "initial_node"
+            },
+            {
+              "id": "2",
+              "label": "2",
+              "role": "polycentric_hub"
+            },
+            {
+              "id": "20",
+              "label": "20",
+              "role": "initial_node"
+            },
+            {
+              "id": "21",
+              "label": "21",
+              "role": "initial_node"
+            },
+            {
+              "id": "22",
+              "label": "22",
+              "role": "initial_node"
+            },
+            {
+              "id": "23",
+              "label": "23",
+              "role": "initial_node"
+            },
+            {
+              "id": "24",
+              "label": "24",
+              "role": "initial_node"
+            },
+            {
+              "id": "3",
+              "label": "3",
+              "role": "initial_node"
+            },
+            {
+              "id": "4",
+              "label": "4",
+              "role": "initial_node"
+            },
+            {
+              "id": "5",
+              "label": "5",
+              "role": "initial_node"
+            },
+            {
+              "id": "6",
+              "label": "6",
+              "role": "initial_node"
+            },
+            {
+              "id": "7",
+              "label": "7",
+              "role": "initial_node"
+            },
+            {
+              "id": "8",
+              "label": "8",
+              "role": "polycentric_hub"
+            },
+            {
+              "id": "9",
+              "label": "9",
+              "role": "initial_node"
+            }
+          ],
+          "edges": [
+            {
+              "source": "1",
+              "target": "3",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "3",
+              "target": "6",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "6",
+              "target": "5",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "5",
+              "target": "10",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "10",
+              "target": "15",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "15",
+              "target": "8",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "8",
+              "target": "17",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "17",
+              "target": "13",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "13",
+              "target": "21",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "21",
+              "target": "11",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "11",
+              "target": "14",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "14",
+              "target": "12",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "12",
+              "target": "20",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "20",
+              "target": "19",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "19",
+              "target": "4",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "4",
+              "target": "23",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "23",
+              "target": "18",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "18",
+              "target": "22",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "22",
+              "target": "0",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "0",
+              "target": "16",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "16",
+              "target": "2",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "2",
+              "target": "24",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "24",
+              "target": "7",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "7",
+              "target": "9",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "19",
+              "target": "8",
+              "type": "random_link"
+            },
+            {
+              "source": "14",
+              "target": "8",
+              "type": "random_link"
+            },
+            {
+              "source": "9",
+              "target": "8",
+              "type": "random_link"
+            },
+            {
+              "source": "0",
+              "target": "11",
+              "type": "random_link"
+            },
+            {
+              "source": "2",
+              "target": "11",
+              "type": "random_link"
+            },
+            {
+              "source": "18",
+              "target": "17",
+              "type": "random_link"
+            },
+            {
+              "source": "23",
+              "target": "2",
+              "type": "random_link"
+            },
+            {
+              "source": "24",
+              "target": "5",
+              "type": "random_link"
+            },
+            {
+              "source": "20",
+              "target": "23",
+              "type": "random_link"
+            },
+            {
+              "source": "22",
+              "target": "2",
+              "type": "random_link"
+            },
+            {
+              "source": "21",
+              "target": "3",
+              "type": "random_link"
+            },
+            {
+              "source": "17",
+              "target": "9",
+              "type": "random_link"
+            },
+            {
+              "source": "17",
+              "target": "6",
+              "type": "random_link"
+            },
+            {
+              "source": "17",
+              "target": "12",
+              "type": "random_link"
+            },
+            {
+              "source": "5",
+              "target": "11",
+              "type": "random_link"
+            },
+            {
+              "source": "8",
+              "target": "2",
+              "type": "random_link"
+            },
+            {
+              "source": "3",
+              "target": "20",
+              "type": "random_link"
+            },
+            {
+              "source": "9",
+              "target": "2",
+              "type": "hub_connection"
+            },
+            {
+              "source": "5",
+              "target": "17",
+              "type": "hub_connection"
+            },
+            {
+              "source": "12",
+              "target": "2",
+              "type": "hub_connection"
+            },
+            {
+              "source": "6",
+              "target": "2",
+              "type": "hub_connection"
+            },
+            {
+              "source": "19",
+              "target": "2",
+              "type": "hub_connection"
+            },
+            {
+              "source": "22",
+              "target": "17",
+              "type": "hub_connection"
+            },
+            {
+              "source": "23",
+              "target": "8",
+              "type": "hub_connection"
+            },
+            {
+              "source": "0",
+              "target": "17",
+              "type": "hub_connection"
+            },
+            {
+              "source": "24",
+              "target": "8",
+              "type": "hub_connection"
+            },
+            {
+              "source": "1",
+              "target": "2",
+              "type": "hub_connection"
+            },
+            {
+              "source": "10",
+              "target": "8",
+              "type": "hub_connection"
+            },
+            {
+              "source": "11",
+              "target": "17",
+              "type": "hub_connection"
+            },
+            {
+              "source": "3",
+              "target": "8",
+              "type": "hub_connection"
+            },
+            {
+              "source": "7",
+              "target": "17",
+              "type": "hub_connection"
+            },
+            {
+              "source": "2",
+              "target": "17",
+              "type": "hub_interlink"
+            }
+          ]
+        },
+        "graph_change_description": "Strategy: 'Implement Polycentric Governance.'.  Implementing Polycentric Governance to distribute control and enhance resilience.  Designated 3 node(s) ['17', '2', '8'] as 'polycentric_hubs' (based on their high existing connectivity or as new strategic centers).  Linked 14 peripheral nodes to these hubs via 'hub_connection' edges to improve their access to diverse information and resources.  Interconnected 1 hub pairs using 'hub_interlink' edges for better coordination and resilience across decision centers.  Overall effect: A more balanced structure, reducing reliance on any single point and improving network robustness."
+      },
+      {
+        "Suggested Strategies": "Develop a Small-World Network for efficiency.",
+        "resulting_graph_demoviz": {
+          "nodes": [
+            {
+              "id": "0",
+              "label": "0",
+              "role": "initial_node"
+            },
+            {
+              "id": "1",
+              "label": "1",
+              "role": "initial_node"
+            },
+            {
+              "id": "10",
+              "label": "10",
+              "role": "initial_node"
+            },
+            {
+              "id": "11",
+              "label": "11",
+              "role": "initial_node"
+            },
+            {
+              "id": "12",
+              "label": "12",
+              "role": "initial_node"
+            },
+            {
+              "id": "13",
+              "label": "13",
+              "role": "initial_node"
+            },
+            {
+              "id": "14",
+              "label": "14",
+              "role": "initial_node"
+            },
+            {
+              "id": "15",
+              "label": "15",
+              "role": "initial_node"
+            },
+            {
+              "id": "16",
+              "label": "16",
+              "role": "initial_node"
+            },
+            {
+              "id": "17",
+              "label": "17",
+              "role": "initial_node"
+            },
+            {
+              "id": "18",
+              "label": "18",
+              "role": "initial_node"
+            },
+            {
+              "id": "19",
+              "label": "19",
+              "role": "initial_node"
+            },
+            {
+              "id": "2",
+              "label": "2",
+              "role": "initial_node"
+            },
+            {
+              "id": "20",
+              "label": "20",
+              "role": "initial_node"
+            },
+            {
+              "id": "21",
+              "label": "21",
+              "role": "initial_node"
+            },
+            {
+              "id": "22",
+              "label": "22",
+              "role": "initial_node"
+            },
+            {
+              "id": "23",
+              "label": "23",
+              "role": "initial_node"
+            },
+            {
+              "id": "24",
+              "label": "24",
+              "role": "initial_node"
+            },
+            {
+              "id": "3",
+              "label": "3",
+              "role": "initial_node"
+            },
+            {
+              "id": "4",
+              "label": "4",
+              "role": "initial_node"
+            },
+            {
+              "id": "5",
+              "label": "5",
+              "role": "initial_node"
+            },
+            {
+              "id": "6",
+              "label": "6",
+              "role": "initial_node"
+            },
+            {
+              "id": "7",
+              "label": "7",
+              "role": "initial_node"
+            },
+            {
+              "id": "8",
+              "label": "8",
+              "role": "initial_node"
+            },
+            {
+              "id": "9",
+              "label": "9",
+              "role": "initial_node"
+            }
+          ],
+          "edges": [
+            {
+              "source": "1",
+              "target": "3",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "3",
+              "target": "6",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "6",
+              "target": "5",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "5",
+              "target": "10",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "10",
+              "target": "15",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "15",
+              "target": "8",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "8",
+              "target": "17",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "17",
+              "target": "13",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "13",
+              "target": "21",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "21",
+              "target": "11",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "11",
+              "target": "14",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "14",
+              "target": "12",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "12",
+              "target": "20",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "20",
+              "target": "19",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "19",
+              "target": "4",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "4",
+              "target": "23",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "23",
+              "target": "18",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "18",
+              "target": "22",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "22",
+              "target": "0",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "0",
+              "target": "16",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "16",
+              "target": "2",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "2",
+              "target": "24",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "24",
+              "target": "7",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "7",
+              "target": "9",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "19",
+              "target": "8",
+              "type": "random_link"
+            },
+            {
+              "source": "14",
+              "target": "8",
+              "type": "random_link"
+            },
+            {
+              "source": "9",
+              "target": "8",
+              "type": "random_link"
+            },
+            {
+              "source": "0",
+              "target": "11",
+              "type": "random_link"
+            },
+            {
+              "source": "2",
+              "target": "11",
+              "type": "random_link"
+            },
+            {
+              "source": "18",
+              "target": "17",
+              "type": "random_link"
+            },
+            {
+              "source": "23",
+              "target": "2",
+              "type": "random_link"
+            },
+            {
+              "source": "24",
+              "target": "5",
+              "type": "random_link"
+            },
+            {
+              "source": "20",
+              "target": "23",
+              "type": "random_link"
+            },
+            {
+              "source": "22",
+              "target": "2",
+              "type": "random_link"
+            },
+            {
+              "source": "21",
+              "target": "3",
+              "type": "random_link"
+            },
+            {
+              "source": "17",
+              "target": "9",
+              "type": "random_link"
+            },
+            {
+              "source": "17",
+              "target": "6",
+              "type": "random_link"
+            },
+            {
+              "source": "17",
+              "target": "12",
+              "type": "random_link"
+            },
+            {
+              "source": "5",
+              "target": "11",
+              "type": "random_link"
+            },
+            {
+              "source": "8",
+              "target": "2",
+              "type": "random_link"
+            },
+            {
+              "source": "3",
+              "target": "20",
+              "type": "random_link"
+            },
+            {
+              "source": "14",
+              "target": "17",
+              "type": "local_cluster_link"
+            },
+            {
+              "source": "24",
+              "target": "11",
+              "type": "local_cluster_link"
+            },
+            {
+              "source": "11",
+              "target": "16",
+              "type": "local_cluster_link"
+            },
+            {
+              "source": "12",
+              "target": "9",
+              "type": "local_cluster_link"
+            },
+            {
+              "source": "15",
+              "target": "5",
+              "type": "local_cluster_link"
+            },
+            {
+              "source": "22",
+              "target": "16",
+              "type": "local_cluster_link"
+            },
+            {
+              "source": "13",
+              "target": "11",
+              "type": "local_cluster_link"
+            },
+            {
+              "source": "22",
+              "target": "23",
+              "type": "local_cluster_link"
+            },
+            {
+              "source": "8",
+              "target": "13",
+              "type": "shortcut_link"
+            }
+          ]
+        },
+        "graph_change_description": "Strategy: 'Develop a Small-World Network for efficiency.'.  Developing a Small-World Network to balance local clustering with global efficiency.  Formed 8 new 'local_cluster_link' edges to create triangles. This strengthens local communities and improves information cohesion within closely-knit groups.  Introduced 1 'shortcut_link'(s) between previously distant nodes. These shortcuts dramatically reduce average path lengths, enabling faster information flow across the entire network.  Overall effect: A network that combines strong local communities with efficient global communication, characteristic of small-world topologies."
+      },
+      {
+        "Suggested Strategies": "Use Scale-Free network principles.",
+        "resulting_graph_demoviz": {
+          "nodes": [
+            {
+              "id": "0",
+              "label": "0",
+              "role": "initial_node"
+            },
+            {
+              "id": "1",
+              "label": "1",
+              "role": "initial_node"
+            },
+            {
+              "id": "10",
+              "label": "10",
+              "role": "initial_node"
+            },
+            {
+              "id": "11",
+              "label": "11",
+              "role": "initial_node"
+            },
+            {
+              "id": "12",
+              "label": "12",
+              "role": "initial_node"
+            },
+            {
+              "id": "13",
+              "label": "13",
+              "role": "initial_node"
+            },
+            {
+              "id": "14",
+              "label": "14",
+              "role": "initial_node"
+            },
+            {
+              "id": "15",
+              "label": "15",
+              "role": "initial_node"
+            },
+            {
+              "id": "16",
+              "label": "16",
+              "role": "initial_node"
+            },
+            {
+              "id": "17",
+              "label": "17",
+              "role": "initial_node"
+            },
+            {
+              "id": "18",
+              "label": "18",
+              "role": "initial_node"
+            },
+            {
+              "id": "19",
+              "label": "19",
+              "role": "initial_node"
+            },
+            {
+              "id": "2",
+              "label": "2",
+              "role": "emergent_hub"
+            },
+            {
+              "id": "20",
+              "label": "20",
+              "role": "initial_node"
+            },
+            {
+              "id": "21",
+              "label": "21",
+              "role": "initial_node"
+            },
+            {
+              "id": "22",
+              "label": "22",
+              "role": "initial_node"
+            },
+            {
+              "id": "23",
+              "label": "23",
+              "role": "initial_node"
+            },
+            {
+              "id": "24",
+              "label": "24",
+              "role": "initial_node"
+            },
+            {
+              "id": "3",
+              "label": "3",
+              "role": "initial_node"
+            },
+            {
+              "id": "4",
+              "label": "4",
+              "role": "initial_node"
+            },
+            {
+              "id": "5",
+              "label": "5",
+              "role": "initial_node"
+            },
+            {
+              "id": "6",
+              "label": "6",
+              "role": "initial_node"
+            },
+            {
+              "id": "7",
+              "label": "7",
+              "role": "initial_node"
+            },
+            {
+              "id": "8",
+              "label": "8",
+              "role": "initial_node"
+            },
+            {
+              "id": "9",
+              "label": "9",
+              "role": "initial_node"
+            }
+          ],
+          "edges": [
+            {
+              "source": "1",
+              "target": "3",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "3",
+              "target": "6",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "6",
+              "target": "5",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "5",
+              "target": "10",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "10",
+              "target": "15",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "15",
+              "target": "8",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "8",
+              "target": "17",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "17",
+              "target": "13",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "13",
+              "target": "21",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "21",
+              "target": "11",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "11",
+              "target": "14",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "14",
+              "target": "12",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "12",
+              "target": "20",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "20",
+              "target": "19",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "19",
+              "target": "4",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "4",
+              "target": "23",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "23",
+              "target": "18",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "18",
+              "target": "22",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "22",
+              "target": "0",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "0",
+              "target": "16",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "16",
+              "target": "2",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "2",
+              "target": "24",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "24",
+              "target": "7",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "7",
+              "target": "9",
+              "type": "spanning_tree_link"
+            },
+            {
+              "source": "19",
+              "target": "8",
+              "type": "random_link"
+            },
+            {
+              "source": "14",
+              "target": "8",
+              "type": "random_link"
+            },
+            {
+              "source": "9",
+              "target": "8",
+              "type": "random_link"
+            },
+            {
+              "source": "0",
+              "target": "11",
+              "type": "random_link"
+            },
+            {
+              "source": "2",
+              "target": "11",
+              "type": "random_link"
+            },
+            {
+              "source": "18",
+              "target": "17",
+              "type": "random_link"
+            },
+            {
+              "source": "23",
+              "target": "2",
+              "type": "random_link"
+            },
+            {
+              "source": "24",
+              "target": "5",
+              "type": "random_link"
+            },
+            {
+              "source": "20",
+              "target": "23",
+              "type": "random_link"
+            },
+            {
+              "source": "22",
+              "target": "2",
+              "type": "random_link"
+            },
+            {
+              "source": "21",
+              "target": "3",
+              "type": "random_link"
+            },
+            {
+              "source": "17",
+              "target": "9",
+              "type": "random_link"
+            },
+            {
+              "source": "17",
+              "target": "6",
+              "type": "random_link"
+            },
+            {
+              "source": "17",
+              "target": "12",
+              "type": "random_link"
+            },
+            {
+              "source": "5",
+              "target": "11",
+              "type": "random_link"
+            },
+            {
+              "source": "8",
+              "target": "2",
+              "type": "random_link"
+            },
+            {
+              "source": "3",
+              "target": "20",
+              "type": "random_link"
+            },
+            {
+              "source": "9",
+              "target": "5",
+              "type": "preferential_attachment_link"
+            },
+            {
+              "source": "18",
+              "target": "21",
+              "type": "preferential_attachment_link"
+            },
+            {
+              "source": "21",
+              "target": "15",
+              "type": "preferential_attachment_link"
+            },
+            {
+              "source": "4",
+              "target": "2",
+              "type": "preferential_attachment_link"
+            },
+            {
+              "source": "1",
+              "target": "4",
+              "type": "preferential_attachment_link"
+            },
+            {
+              "source": "4",
+              "target": "6",
+              "type": "preferential_attachment_link"
+            },
+            {
+              "source": "21",
+              "target": "14",
+              "type": "preferential_attachment_link"
+            },
+            {
+              "source": "0",
+              "target": "6",
+              "type": "preferential_attachment_link"
+            },
+            {
+              "source": "15",
+              "target": "1",
+              "type": "preferential_attachment_link"
+            },
+            {
+              "source": "0",
+              "target": "20",
+              "type": "preferential_attachment_link"
+            }
+          ]
+        },
+        "graph_change_description": "Strategy: 'Use Scale-Free network principles.'.  Applying Scale-Free network principles (Barab\u00e1si\u2013Albert model) to foster robust hub emergence through preferential attachment.  Added 10 new 'preferential_attachment_link' edges. These links were guided by preferential attachment, meaning nodes with higher existing connections were more likely to receive new links.  This process led to 1 node(s) being designated as 'emergent_hubs' due to their significantly increased connectivity.  Overall effect: Fosters a network where a few nodes become highly connected hubs, typical of scale-free systems. This can lead to high efficiency and robustness to random node failures, but vulnerability to targeted attacks on hubs."
+      }
+    ],
+    "typical_graph_demoviz": {
+      "nodes": [
+        {
+          "id": "0",
+          "label": "0",
+          "role": "initial_node"
+        },
+        {
+          "id": "1",
+          "label": "1",
+          "role": "initial_node"
+        },
+        {
+          "id": "10",
+          "label": "10",
+          "role": "initial_node"
+        },
+        {
+          "id": "11",
+          "label": "11",
+          "role": "initial_node"
+        },
+        {
+          "id": "12",
+          "label": "12",
+          "role": "initial_node"
+        },
+        {
+          "id": "13",
+          "label": "13",
+          "role": "initial_node"
+        },
+        {
+          "id": "14",
+          "label": "14",
+          "role": "initial_node"
+        },
+        {
+          "id": "15",
+          "label": "15",
+          "role": "initial_node"
+        },
+        {
+          "id": "16",
+          "label": "16",
+          "role": "initial_node"
+        },
+        {
+          "id": "17",
+          "label": "17",
+          "role": "initial_node"
+        },
+        {
+          "id": "18",
+          "label": "18",
+          "role": "initial_node"
+        },
+        {
+          "id": "19",
+          "label": "19",
+          "role": "initial_node"
+        },
+        {
+          "id": "2",
+          "label": "2",
+          "role": "initial_node"
+        },
+        {
+          "id": "20",
+          "label": "20",
+          "role": "initial_node"
+        },
+        {
+          "id": "21",
+          "label": "21",
+          "role": "initial_node"
+        },
+        {
+          "id": "22",
+          "label": "22",
+          "role": "initial_node"
+        },
+        {
+          "id": "23",
+          "label": "23",
+          "role": "initial_node"
+        },
+        {
+          "id": "24",
+          "label": "24",
+          "role": "initial_node"
+        },
+        {
+          "id": "3",
+          "label": "3",
+          "role": "initial_node"
+        },
+        {
+          "id": "4",
+          "label": "4",
+          "role": "initial_node"
+        },
+        {
+          "id": "5",
+          "label": "5",
+          "role": "initial_node"
+        },
+        {
+          "id": "6",
+          "label": "6",
+          "role": "initial_node"
+        },
+        {
+          "id": "7",
+          "label": "7",
+          "role": "initial_node"
+        },
+        {
+          "id": "8",
+          "label": "8",
+          "role": "initial_node"
+        },
+        {
+          "id": "9",
+          "label": "9",
+          "role": "initial_node"
+        }
+      ],
+      "edges": [
+        {
+          "source": "1",
+          "target": "3",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "3",
+          "target": "6",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "6",
+          "target": "5",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "5",
+          "target": "10",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "10",
+          "target": "15",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "15",
+          "target": "8",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "8",
+          "target": "17",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "17",
+          "target": "13",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "13",
+          "target": "21",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "21",
+          "target": "11",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "11",
+          "target": "14",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "14",
+          "target": "12",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "12",
+          "target": "20",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "20",
+          "target": "19",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "19",
+          "target": "4",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "4",
+          "target": "23",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "23",
+          "target": "18",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "18",
+          "target": "22",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "22",
+          "target": "0",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "0",
+          "target": "16",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "16",
+          "target": "2",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "2",
+          "target": "24",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "24",
+          "target": "7",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "7",
+          "target": "9",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "19",
+          "target": "8",
+          "type": "random_link"
+        },
+        {
+          "source": "14",
+          "target": "8",
+          "type": "random_link"
+        },
+        {
+          "source": "9",
+          "target": "8",
+          "type": "random_link"
+        },
+        {
+          "source": "0",
+          "target": "11",
+          "type": "random_link"
+        },
+        {
+          "source": "2",
+          "target": "11",
+          "type": "random_link"
+        },
+        {
+          "source": "18",
+          "target": "17",
+          "type": "random_link"
+        },
+        {
+          "source": "23",
+          "target": "2",
+          "type": "random_link"
+        },
+        {
+          "source": "24",
+          "target": "5",
+          "type": "random_link"
+        },
+        {
+          "source": "20",
+          "target": "23",
+          "type": "random_link"
+        },
+        {
+          "source": "22",
+          "target": "2",
+          "type": "random_link"
+        },
+        {
+          "source": "21",
+          "target": "3",
+          "type": "random_link"
+        },
+        {
+          "source": "17",
+          "target": "9",
+          "type": "random_link"
+        },
+        {
+          "source": "17",
+          "target": "6",
+          "type": "random_link"
+        },
+        {
+          "source": "17",
+          "target": "12",
+          "type": "random_link"
+        },
+        {
+          "source": "5",
+          "target": "11",
+          "type": "random_link"
+        },
+        {
+          "source": "8",
+          "target": "2",
+          "type": "random_link"
+        },
+        {
+          "source": "3",
+          "target": "20",
+          "type": "random_link"
+        }
+      ]
+    },
+    "doubled_size_typical_graph_demoviz": {
+      "nodes": [
+        {
+          "id": "0",
+          "label": "0",
+          "role": "initial_node"
+        },
+        {
+          "id": "1",
+          "label": "1",
+          "role": "initial_node"
+        },
+        {
+          "id": "10",
+          "label": "10",
+          "role": "initial_node"
+        },
+        {
+          "id": "11",
+          "label": "11",
+          "role": "initial_node"
+        },
+        {
+          "id": "12",
+          "label": "12",
+          "role": "initial_node"
+        },
+        {
+          "id": "13",
+          "label": "13",
+          "role": "initial_hub"
+        },
+        {
+          "id": "14",
+          "label": "14",
+          "role": "initial_node"
+        },
+        {
+          "id": "15",
+          "label": "15",
+          "role": "initial_node"
+        },
+        {
+          "id": "16",
+          "label": "16",
+          "role": "initial_node"
+        },
+        {
+          "id": "17",
+          "label": "17",
+          "role": "initial_node"
+        },
+        {
+          "id": "18",
+          "label": "18",
+          "role": "initial_node"
+        },
+        {
+          "id": "19",
+          "label": "19",
+          "role": "initial_node"
+        },
+        {
+          "id": "2",
+          "label": "2",
+          "role": "initial_node"
+        },
+        {
+          "id": "20",
+          "label": "20",
+          "role": "initial_node"
+        },
+        {
+          "id": "21",
+          "label": "21",
+          "role": "initial_node"
+        },
+        {
+          "id": "22",
+          "label": "22",
+          "role": "initial_node"
+        },
+        {
+          "id": "23",
+          "label": "23",
+          "role": "initial_node"
+        },
+        {
+          "id": "24",
+          "label": "24",
+          "role": "initial_node"
+        },
+        {
+          "id": "25",
+          "label": "25",
+          "role": "initial_node"
+        },
+        {
+          "id": "26",
+          "label": "26",
+          "role": "initial_node"
+        },
+        {
+          "id": "27",
+          "label": "27",
+          "role": "initial_node"
+        },
+        {
+          "id": "28",
+          "label": "28",
+          "role": "initial_node"
+        },
+        {
+          "id": "29",
+          "label": "29",
+          "role": "initial_node"
+        },
+        {
+          "id": "3",
+          "label": "3",
+          "role": "initial_node"
+        },
+        {
+          "id": "30",
+          "label": "30",
+          "role": "initial_node"
+        },
+        {
+          "id": "31",
+          "label": "31",
+          "role": "initial_node"
+        },
+        {
+          "id": "32",
+          "label": "32",
+          "role": "initial_node"
+        },
+        {
+          "id": "33",
+          "label": "33",
+          "role": "initial_node"
+        },
+        {
+          "id": "34",
+          "label": "34",
+          "role": "initial_node"
+        },
+        {
+          "id": "35",
+          "label": "35",
+          "role": "initial_node"
+        },
+        {
+          "id": "36",
+          "label": "36",
+          "role": "initial_node"
+        },
+        {
+          "id": "37",
+          "label": "37",
+          "role": "initial_node"
+        },
+        {
+          "id": "38",
+          "label": "38",
+          "role": "initial_node"
+        },
+        {
+          "id": "39",
+          "label": "39",
+          "role": "initial_node"
+        },
+        {
+          "id": "4",
+          "label": "4",
+          "role": "initial_node"
+        },
+        {
+          "id": "40",
+          "label": "40",
+          "role": "initial_node"
+        },
+        {
+          "id": "41",
+          "label": "41",
+          "role": "initial_node"
+        },
+        {
+          "id": "42",
+          "label": "42",
+          "role": "initial_node"
+        },
+        {
+          "id": "43",
+          "label": "43",
+          "role": "initial_node"
+        },
+        {
+          "id": "44",
+          "label": "44",
+          "role": "initial_node"
+        },
+        {
+          "id": "45",
+          "label": "45",
+          "role": "initial_node"
+        },
+        {
+          "id": "46",
+          "label": "46",
+          "role": "initial_node"
+        },
+        {
+          "id": "47",
+          "label": "47",
+          "role": "initial_node"
+        },
+        {
+          "id": "48",
+          "label": "48",
+          "role": "initial_node"
+        },
+        {
+          "id": "49",
+          "label": "49",
+          "role": "initial_node"
+        },
+        {
+          "id": "5",
+          "label": "5",
+          "role": "initial_node"
+        },
+        {
+          "id": "50",
+          "label": "50",
+          "role": "initial_node"
+        },
+        {
+          "id": "51",
+          "label": "51",
+          "role": "initial_node"
+        },
+        {
+          "id": "6",
+          "label": "6",
+          "role": "initial_node"
+        },
+        {
+          "id": "7",
+          "label": "7",
+          "role": "initial_node"
+        },
+        {
+          "id": "8",
+          "label": "8",
+          "role": "initial_node"
+        },
+        {
+          "id": "9",
+          "label": "9",
+          "role": "initial_node"
+        }
+      ],
+      "edges": [
+        {
+          "source": "6",
+          "target": "22",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "22",
+          "target": "28",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "28",
+          "target": "2",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "2",
+          "target": "23",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "23",
+          "target": "44",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "44",
+          "target": "30",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "30",
+          "target": "41",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "41",
+          "target": "7",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "7",
+          "target": "11",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "11",
+          "target": "19",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "19",
+          "target": "38",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "38",
+          "target": "40",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "40",
+          "target": "18",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "18",
+          "target": "31",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "31",
+          "target": "24",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "24",
+          "target": "3",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "3",
+          "target": "12",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "12",
+          "target": "0",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "0",
+          "target": "47",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "47",
+          "target": "50",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "50",
+          "target": "20",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "20",
+          "target": "27",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "27",
+          "target": "9",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "9",
+          "target": "32",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "32",
+          "target": "33",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "33",
+          "target": "42",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "42",
+          "target": "13",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "13",
+          "target": "8",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "8",
+          "target": "21",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "21",
+          "target": "25",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "25",
+          "target": "45",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "45",
+          "target": "16",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "16",
+          "target": "35",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "35",
+          "target": "29",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "29",
+          "target": "39",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "39",
+          "target": "34",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "34",
+          "target": "48",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "48",
+          "target": "51",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "51",
+          "target": "14",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "14",
+          "target": "1",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "1",
+          "target": "46",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "46",
+          "target": "43",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "43",
+          "target": "36",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "36",
+          "target": "49",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "49",
+          "target": "26",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "26",
+          "target": "4",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "4",
+          "target": "17",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "17",
+          "target": "15",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "15",
+          "target": "37",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "37",
+          "target": "10",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "10",
+          "target": "5",
+          "type": "spanning_tree_link"
+        },
+        {
+          "source": "6",
+          "target": "49",
+          "type": "random_link"
+        },
+        {
+          "source": "29",
+          "target": "34",
+          "type": "random_link"
+        },
+        {
+          "source": "36",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "28",
+          "target": "30",
+          "type": "random_link"
+        },
+        {
+          "source": "13",
+          "target": "37",
+          "type": "random_link"
+        },
+        {
+          "source": "24",
+          "target": "44",
+          "type": "random_link"
+        },
+        {
+          "source": "22",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "13",
+          "target": "7",
+          "type": "random_link"
+        },
+        {
+          "source": "47",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "2",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "19",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "13",
+          "target": "35",
+          "type": "random_link"
+        },
+        {
+          "source": "4",
+          "target": "11",
+          "type": "random_link"
+        },
+        {
+          "source": "13",
+          "target": "20",
+          "type": "random_link"
+        },
+        {
+          "source": "39",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "48",
+          "target": "7",
+          "type": "random_link"
+        },
+        {
+          "source": "3",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "51",
+          "target": "30",
+          "type": "random_link"
+        },
+        {
+          "source": "32",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "4",
+          "target": "49",
+          "type": "random_link"
+        },
+        {
+          "source": "13",
+          "target": "31",
+          "type": "random_link"
+        },
+        {
+          "source": "29",
+          "target": "49",
+          "type": "random_link"
+        },
+        {
+          "source": "41",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "13",
+          "target": "26",
+          "type": "random_link"
+        },
+        {
+          "source": "13",
+          "target": "17",
+          "type": "random_link"
+        },
+        {
+          "source": "40",
+          "target": "20",
+          "type": "random_link"
+        },
+        {
+          "source": "9",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "30",
+          "target": "34",
+          "type": "random_link"
+        },
+        {
+          "source": "23",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "24",
+          "target": "13",
+          "type": "random_link"
+        }
+      ]
+    },
+    "doubled_size_graph_description": "The typical network, originally with 25 nodes, has been scaled to approximately 52 nodes while notionally maintaining the underlying network profile (Centrality Score: 3.0, Connectivity Score: 3.0, Clustering Score: 3.0). This scaling scenario presents the following potential implications and considerations:\n\n- **Medium Connectivity upon Scaling:**\n  - *Potential Pros:* Provides a balanced foundation where the network can likely absorb growth without immediate overload or severe fragmentation. However, strategic adjustments to enhance or create key links will be highly beneficial for long-term cohesion.\n  - *Potential Cons:* May naturally develop pockets of high and low connectivity, requiring ongoing monitoring and network weaving. Without proactive intervention, some new areas or members might become less integrated than others, impacting overall efficiency.\n- **Medium Centrality upon Scaling:**\n  - *Potential Pros:* Offers a beneficial mix of some established coordination points alongside distributed elements. Growth can leverage existing coordinators while still allowing for decentralized adaptation and innovation in new areas.\n  - *Potential Cons:* The roles and responsibilities of existing central points may need significant re-evaluation; some may become overloaded while new potential leaders or hubs in the expanded network might need to be identified, developed, and empowered to manage the increased scale effectively.\n- **Medium Clustering upon Scaling:**\n  - *Potential Pros:* Provides a flexible structure with some established workgroups but also many open channels for cross-functional interaction. Growth can occur both by expanding existing clusters and forming new ones as needed.\n  - *Potential Cons:* Requires active management to ensure a good balance between local cohesion within clusters and global integration across the entire network. The importance of individuals or teams acting as bridges between clusters becomes even more critical to prevent fragmentation.\n\nIn summary, scaling any network structure requires proactive strategies to manage these emergent dynamics. The goal is to ensure that growth is sustainable and enhances, rather than detracts from, the organization's overall effectiveness, communication, and collaboration capabilities."
+  },
+  {
+    "trigger_op": "test trigger low con v3",
+    "seek_value": "Test Low Con v3",
+    "scores": {
+      "centrality": 2.0,
+      "connectivity": 1.5,
+      "clustering": 4.0
+    },
+    "simulation_output_table": [
+      {
+        "Suggested Strategies": "Adopt Hub & Spoke model.",
+        "resulting_graph_demoviz": {
+          "nodes": [
+            {
+              "id": "0",
+              "label": "0",
+              "role": "spoke_node"
+            },
+            {
+              "id": "1",
+              "label": "1",
+              "role": "spoke_node"
+            },
+            {
+              "id": "10",
+              "label": "10",
+              "role": "central_hub"
+            },
+            {
+              "id": "11",
+              "label": "11",
+              "role": "spoke_node"
+            },
+            {
+              "id": "12",
+              "label": "12",
+              "role": "spoke_node"
+            },
+            {
+              "id": "13",
+              "label": "13",
+              "role": "spoke_node"
+            },
+            {
+              "id": "14",
+              "label": "14",
+              "role": "spoke_node"
+            },
+            {
+              "id": "15",
+              "label": "15",
+              "role": "spoke_node"
+            },
+            {
+              "id": "16",
+              "label": "16",
+              "role": "spoke_node"
+            },
+            {
+              "id": "17",
+              "label": "17",
+              "role": "spoke_node"
+            },
+            {
+              "id": "18",
+              "label": "18",
+              "role": "spoke_node"
+            },
+            {
+              "id": "19",
+              "label": "19",
+              "role": "spoke_node"
+            },
+            {
+              "id": "2",
+              "label": "2",
+              "role": "spoke_node"
+            },
+            {
+              "id": "20",
+              "label": "20",
+              "role": "spoke_node"
+            },
+            {
+              "id": "21",
+              "label": "21",
+              "role": "spoke_node"
+            },
+            {
+              "id": "22",
+              "label": "22",
+              "role": "spoke_node"
+            },
+            {
+              "id": "23",
+              "label": "23",
+              "role": "spoke_node"
+            },
+            {
+              "id": "24",
+              "label": "24",
+              "role": "spoke_node"
+            },
+            {
+              "id": "25",
+              "label": "25",
+              "role": "spoke_node"
+            },
+            {
+              "id": "26",
+              "label": "26",
+              "role": "spoke_node"
+            },
+            {
+              "id": "27",
+              "label": "27",
+              "role": "spoke_node"
+            },
+            {
+              "id": "3",
+              "label": "3",
+              "role": "spoke_node"
+            },
+            {
+              "id": "4",
+              "label": "4",
+              "role": "spoke_node"
+            },
+            {
+              "id": "5",
+              "label": "5",
+              "role": "spoke_node"
+            },
+            {
+              "id": "6",
+              "label": "6",
+              "role": "spoke_node"
+            },
+            {
+              "id": "7",
+              "label": "7",
+              "role": "spoke_node"
+            },
+            {
+              "id": "8",
+              "label": "8",
+              "role": "spoke_node"
+            },
+            {
+              "id": "9",
+              "label": "9",
+              "role": "spoke_node"
+            }
+          ],
+          "edges": [
+            {
+              "source": "17",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "8",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "9",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "12",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "19",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "20",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "0",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "24",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "26",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "13",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "2",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "7",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "27",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "5",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "15",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "4",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "6",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "16",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "18",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "22",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "23",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "14",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "25",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "1",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "21",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "11",
+              "target": "10",
+              "type": "spoke_connection"
+            },
+            {
+              "source": "3",
+              "target": "10",
+              "type": "spoke_connection"
+            }
+          ]
+        },
+        "graph_change_description": "Strategy: 'Adopt Hub & Spoke model.'.  Restructuring into a Hub & Spoke model for centralized control and streamlined information flow.  All existing edges were notionally replaced. 27 new 'spoke_connection' edges created, directly linking each 'spoke_node' to the 'central_hub'. This ensures direct communication with the center. Removed 27 previous non-spoke edges.  Overall effect: Highly centralized structure, efficient for top-down communication and control, but can create bottlenecks at the hub and reduce peripheral autonomy/resilience."
+      },
+      {
+        "Suggested Strategies": "Apply Distributed Synchronization",
+        "resulting_graph_demoviz": {
+          "nodes": [
+            {
+              "id": "0",
+              "label": "0",
+              "role": "initial_node"
+            },
+            {
+              "id": "1",
+              "label": "1",
+              "role": "initial_node"
+            },
+            {
+              "id": "10",
+              "label": "10",
+              "role": "initial_node"
+            },
+            {
+              "id": "11",
+              "label": "11",
+              "role": "initial_node"
+            },
+            {
+              "id": "12",
+              "label": "12",
+              "role": "initial_node"
+            },
+            {
+              "id": "13",
+              "label": "13",
+              "role": "initial_node"
+            },
+            {
+              "id": "14",
+              "label": "14",
+              "role": "initial_node"
+            },
+            {
+              "id": "15",
+              "label": "15",
+              "role": "initial_node"
+            },
+            {
+              "id": "16",
+              "label": "16",
+              "role": "initial_node"
+            },
+            {
+              "id": "17",
+              "label": "17",
+              "role": "initial_node"
+            },
+            {
+              "id": "18",
+              "label": "18",
+              "role": "initial_node"
+            },
+            {
+              "id": "19",
+              "label": "19",
+              "role": "initial_node"
+            },
+            {
+              "id": "2",
+              "label": "2",
+              "role": "initial_node"
+            },
+            {
+              "id": "20",
+              "label": "20",
+              "role": "initial_node"
+            },
+            {
+              "id": "21",
+              "label": "21",
+              "role": "initial_node"
+            },
+            {
+              "id": "22",
+              "label": "22",
+              "role": "initial_node"
+            },
+            {
+              "id": "23",
+              "label": "23",
+              "role": "initial_node"
+            },
+            {
+              "id": "24",
+              "label": "24",
+              "role": "initial_node"
+            },
+            {
+              "id": "25",
+              "label": "25",
+              "role": "initial_node"
+            },
+            {
+              "id": "26",
+              "label": "26",
+              "role": "initial_node"
+            },
+            {
+              "id": "27",
+              "label": "27",
+              "role": "initial_node"
+            },
+            {
+              "id": "3",
+              "label": "3",
+              "role": "initial_node"
+            },
+            {
+              "id": "4",
+              "label": "4",
+              "role": "initial_node"
+            },
+            {
+              "id": "5",
+              "label": "5",
+              "role": "initial_node"
+            },
+            {
+              "id": "6",
+              "label": "6",
+              "role": "initial_node"
+            },
+            {
+              "id": "7",
+              "label": "7",
+              "role": "initial_node"
+            },
+            {
+              "id": "8",
+              "label": "8",
+              "role": "initial_node"
+            },
+            {
+              "id": "9",
+              "label": "9",
+              "role": "initial_node"
+            }
+          ],
+          "edges": [
+            {
+              "source": "22",
+              "target": "8",
+              "type": "random_link"
+            },
+            {
+              "source": "17",
+              "target": "23",
+              "type": "random_link"
+            },
+            {
+              "source": "9",
+              "target": "2",
+              "type": "random_link"
+            },
+            {
+              "source": "12",
+              "target": "2",
+              "type": "random_link"
+            },
+            {
+              "source": "10",
+              "target": "18",
+              "type": "random_link"
+            },
+            {
+              "source": "9",
+              "target": "13",
+              "type": "random_link"
+            },
+            {
+              "source": "15",
+              "target": "5",
+              "type": "random_link"
+            },
+            {
+              "source": "14",
+              "target": "25",
+              "type": "random_link"
+            },
+            {
+              "source": "11",
+              "target": "16",
+              "type": "random_link"
+            },
+            {
+              "source": "19",
+              "target": "25",
+              "type": "random_link"
+            },
+            {
+              "source": "20",
+              "target": "10",
+              "type": "random_link"
+            },
+            {
+              "source": "19",
+              "target": "26",
+              "type": "random_link"
+            },
+            {
+              "source": "0",
+              "target": "18",
+              "type": "random_link"
+            },
+            {
+              "source": "24",
+              "target": "13",
+              "type": "random_link"
+            },
+            {
+              "source": "27",
+              "target": "8",
+              "type": "random_link"
+            },
+            {
+              "source": "14",
+              "target": "19",
+              "type": "random_link"
+            },
+            {
+              "source": "7",
+              "target": "3",
+              "type": "random_link"
+            },
+            {
+              "source": "17",
+              "target": "10",
+              "type": "random_link"
+            },
+            {
+              "source": "26",
+              "target": "23",
+              "type": "random_link"
+            },
+            {
+              "source": "4",
+              "target": "11",
+              "type": "random_link"
+            },
+            {
+              "source": "6",
+              "target": "21",
+              "type": "random_link"
+            },
+            {
+              "source": "18",
+              "target": "7",
+              "type": "random_link"
+            },
+            {
+              "source": "1",
+              "target": "13",
+              "type": "random_link"
+            },
+            {
+              "source": "8",
+              "target": "10",
+              "type": "random_link"
+            },
+            {
+              "source": "16",
+              "target": "22",
+              "type": "random_link"
+            },
+            {
+              "source": "12",
+              "target": "21",
+              "type": "random_link"
+            },
+            {
+              "source": "9",
+              "target": "1",
+              "type": "clustering_link"
+            },
+            {
+              "source": "9",
+              "target": "24",
+              "type": "clustering_link"
+            },
+            {
+              "source": "2",
+              "target": "21",
+              "type": "clustering_link"
+            },
+            {
+              "source": "22",
+              "target": "10",
+              "type": "clustering_link"
+            },
+            {
+              "source": "23",
+              "target": "19",
+              "type": "clustering_link"
+            },
+            {
+              "source": "11",
+              "target": "22",
+              "type": "clustering_link"
+            },
+            {
+              "source": "11",
+              "target": "7",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "20",
+              "target": "9",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "20",
+              "target": "12",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "3",
+              "target": "16",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "12",
+              "target": "0",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "8",
+              "target": "9",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "13",
+              "target": "4",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "1",
+              "target": "23",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "26",
+              "target": "8",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "24",
+              "target": "15",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "9",
+              "target": "0",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "17",
+              "target": "20",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "0",
+              "target": "8",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "3",
+              "target": "10",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "12",
+              "target": "19",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "27",
+              "target": "3",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "13",
+              "target": "19",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "3",
+              "target": "21",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "14",
+              "target": "22",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "8",
+              "target": "3",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "16",
+              "target": "25",
+              "type": "sync_enhancement_link"
+            },
+            {
+              "source": "1",
+              "target": "15",
+              "type": "sync_enhancement_link"
+            }
+          ]
+        },
+        "graph_change_description": "Strategy: 'Apply Distributed Synchronization'.  Applying Distributed Synchronization to enhance overall network connectivity and redundancy.  Added 22 new 'sync_enhancement_link' edges somewhat randomly. This aims to reduce average path lengths, increase the number of alternative communication routes, and make the network more robust against potential disconnections.  Overall effect: Improved resilience and potentially faster information flow across the network."
+      }
+    ],
+    "typical_graph_demoviz": {
+      "nodes": [
+        {
+          "id": "0",
+          "label": "0",
+          "role": "initial_node"
+        },
+        {
+          "id": "1",
+          "label": "1",
+          "role": "initial_node"
+        },
+        {
+          "id": "10",
+          "label": "10",
+          "role": "initial_node"
+        },
+        {
+          "id": "11",
+          "label": "11",
+          "role": "initial_node"
+        },
+        {
+          "id": "12",
+          "label": "12",
+          "role": "initial_node"
+        },
+        {
+          "id": "13",
+          "label": "13",
+          "role": "initial_node"
+        },
+        {
+          "id": "14",
+          "label": "14",
+          "role": "initial_node"
+        },
+        {
+          "id": "15",
+          "label": "15",
+          "role": "initial_node"
+        },
+        {
+          "id": "16",
+          "label": "16",
+          "role": "initial_node"
+        },
+        {
+          "id": "17",
+          "label": "17",
+          "role": "initial_node"
+        },
+        {
+          "id": "18",
+          "label": "18",
+          "role": "initial_node"
+        },
+        {
+          "id": "19",
+          "label": "19",
+          "role": "initial_node"
+        },
+        {
+          "id": "2",
+          "label": "2",
+          "role": "initial_node"
+        },
+        {
+          "id": "20",
+          "label": "20",
+          "role": "initial_node"
+        },
+        {
+          "id": "21",
+          "label": "21",
+          "role": "initial_node"
+        },
+        {
+          "id": "22",
+          "label": "22",
+          "role": "initial_node"
+        },
+        {
+          "id": "23",
+          "label": "23",
+          "role": "initial_node"
+        },
+        {
+          "id": "24",
+          "label": "24",
+          "role": "initial_node"
+        },
+        {
+          "id": "25",
+          "label": "25",
+          "role": "initial_node"
+        },
+        {
+          "id": "26",
+          "label": "26",
+          "role": "initial_node"
+        },
+        {
+          "id": "27",
+          "label": "27",
+          "role": "initial_node"
+        },
+        {
+          "id": "3",
+          "label": "3",
+          "role": "initial_node"
+        },
+        {
+          "id": "4",
+          "label": "4",
+          "role": "initial_node"
+        },
+        {
+          "id": "5",
+          "label": "5",
+          "role": "initial_node"
+        },
+        {
+          "id": "6",
+          "label": "6",
+          "role": "initial_node"
+        },
+        {
+          "id": "7",
+          "label": "7",
+          "role": "initial_node"
+        },
+        {
+          "id": "8",
+          "label": "8",
+          "role": "initial_node"
+        },
+        {
+          "id": "9",
+          "label": "9",
+          "role": "initial_node"
+        }
+      ],
+      "edges": [
+        {
+          "source": "22",
+          "target": "8",
+          "type": "random_link"
+        },
+        {
+          "source": "17",
+          "target": "23",
+          "type": "random_link"
+        },
+        {
+          "source": "9",
+          "target": "2",
+          "type": "random_link"
+        },
+        {
+          "source": "12",
+          "target": "2",
+          "type": "random_link"
+        },
+        {
+          "source": "10",
+          "target": "18",
+          "type": "random_link"
+        },
+        {
+          "source": "9",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "15",
+          "target": "5",
+          "type": "random_link"
+        },
+        {
+          "source": "14",
+          "target": "25",
+          "type": "random_link"
+        },
+        {
+          "source": "11",
+          "target": "16",
+          "type": "random_link"
+        },
+        {
+          "source": "19",
+          "target": "25",
+          "type": "random_link"
+        },
+        {
+          "source": "20",
+          "target": "10",
+          "type": "random_link"
+        },
+        {
+          "source": "19",
+          "target": "26",
+          "type": "random_link"
+        },
+        {
+          "source": "0",
+          "target": "18",
+          "type": "random_link"
+        },
+        {
+          "source": "24",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "27",
+          "target": "8",
+          "type": "random_link"
+        },
+        {
+          "source": "14",
+          "target": "19",
+          "type": "random_link"
+        },
+        {
+          "source": "7",
+          "target": "3",
+          "type": "random_link"
+        },
+        {
+          "source": "17",
+          "target": "10",
+          "type": "random_link"
+        },
+        {
+          "source": "26",
+          "target": "23",
+          "type": "random_link"
+        },
+        {
+          "source": "4",
+          "target": "11",
+          "type": "random_link"
+        },
+        {
+          "source": "6",
+          "target": "21",
+          "type": "random_link"
+        },
+        {
+          "source": "18",
+          "target": "7",
+          "type": "random_link"
+        },
+        {
+          "source": "1",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "8",
+          "target": "10",
+          "type": "random_link"
+        },
+        {
+          "source": "16",
+          "target": "22",
+          "type": "random_link"
+        },
+        {
+          "source": "12",
+          "target": "21",
+          "type": "random_link"
+        },
+        {
+          "source": "9",
+          "target": "1",
+          "type": "clustering_link"
+        },
+        {
+          "source": "9",
+          "target": "24",
+          "type": "clustering_link"
+        },
+        {
+          "source": "2",
+          "target": "21",
+          "type": "clustering_link"
+        },
+        {
+          "source": "22",
+          "target": "10",
+          "type": "clustering_link"
+        },
+        {
+          "source": "23",
+          "target": "19",
+          "type": "clustering_link"
+        },
+        {
+          "source": "11",
+          "target": "22",
+          "type": "clustering_link"
+        }
+      ]
+    },
+    "doubled_size_typical_graph_demoviz": {
+      "nodes": [
+        {
+          "id": "0",
+          "label": "0",
+          "role": "initial_node"
+        },
+        {
+          "id": "1",
+          "label": "1",
+          "role": "initial_node"
+        },
+        {
+          "id": "10",
+          "label": "10",
+          "role": "initial_node"
+        },
+        {
+          "id": "11",
+          "label": "11",
+          "role": "initial_node"
+        },
+        {
+          "id": "12",
+          "label": "12",
+          "role": "initial_node"
+        },
+        {
+          "id": "13",
+          "label": "13",
+          "role": "initial_node"
+        },
+        {
+          "id": "14",
+          "label": "14",
+          "role": "initial_node"
+        },
+        {
+          "id": "15",
+          "label": "15",
+          "role": "initial_node"
+        },
+        {
+          "id": "16",
+          "label": "16",
+          "role": "initial_node"
+        },
+        {
+          "id": "17",
+          "label": "17",
+          "role": "initial_node"
+        },
+        {
+          "id": "18",
+          "label": "18",
+          "role": "initial_node"
+        },
+        {
+          "id": "19",
+          "label": "19",
+          "role": "initial_node"
+        },
+        {
+          "id": "2",
+          "label": "2",
+          "role": "initial_node"
+        },
+        {
+          "id": "20",
+          "label": "20",
+          "role": "initial_node"
+        },
+        {
+          "id": "21",
+          "label": "21",
+          "role": "initial_node"
+        },
+        {
+          "id": "22",
+          "label": "22",
+          "role": "initial_node"
+        },
+        {
+          "id": "23",
+          "label": "23",
+          "role": "initial_node"
+        },
+        {
+          "id": "24",
+          "label": "24",
+          "role": "initial_node"
+        },
+        {
+          "id": "25",
+          "label": "25",
+          "role": "initial_node"
+        },
+        {
+          "id": "26",
+          "label": "26",
+          "role": "initial_node"
+        },
+        {
+          "id": "27",
+          "label": "27",
+          "role": "initial_node"
+        },
+        {
+          "id": "28",
+          "label": "28",
+          "role": "initial_node"
+        },
+        {
+          "id": "29",
+          "label": "29",
+          "role": "initial_node"
+        },
+        {
+          "id": "3",
+          "label": "3",
+          "role": "initial_node"
+        },
+        {
+          "id": "30",
+          "label": "30",
+          "role": "initial_node"
+        },
+        {
+          "id": "31",
+          "label": "31",
+          "role": "initial_node"
+        },
+        {
+          "id": "32",
+          "label": "32",
+          "role": "initial_node"
+        },
+        {
+          "id": "33",
+          "label": "33",
+          "role": "initial_node"
+        },
+        {
+          "id": "34",
+          "label": "34",
+          "role": "initial_node"
+        },
+        {
+          "id": "35",
+          "label": "35",
+          "role": "initial_node"
+        },
+        {
+          "id": "36",
+          "label": "36",
+          "role": "initial_node"
+        },
+        {
+          "id": "37",
+          "label": "37",
+          "role": "initial_node"
+        },
+        {
+          "id": "38",
+          "label": "38",
+          "role": "initial_node"
+        },
+        {
+          "id": "39",
+          "label": "39",
+          "role": "initial_node"
+        },
+        {
+          "id": "4",
+          "label": "4",
+          "role": "initial_node"
+        },
+        {
+          "id": "40",
+          "label": "40",
+          "role": "initial_node"
+        },
+        {
+          "id": "41",
+          "label": "41",
+          "role": "initial_node"
+        },
+        {
+          "id": "42",
+          "label": "42",
+          "role": "initial_node"
+        },
+        {
+          "id": "5",
+          "label": "5",
+          "role": "initial_node"
+        },
+        {
+          "id": "6",
+          "label": "6",
+          "role": "initial_node"
+        },
+        {
+          "id": "7",
+          "label": "7",
+          "role": "initial_node"
+        },
+        {
+          "id": "8",
+          "label": "8",
+          "role": "initial_node"
+        },
+        {
+          "id": "9",
+          "label": "9",
+          "role": "initial_node"
+        }
+      ],
+      "edges": [
+        {
+          "source": "12",
+          "target": "25",
+          "type": "random_link"
+        },
+        {
+          "source": "29",
+          "target": "26",
+          "type": "random_link"
+        },
+        {
+          "source": "42",
+          "target": "31",
+          "type": "random_link"
+        },
+        {
+          "source": "17",
+          "target": "42",
+          "type": "random_link"
+        },
+        {
+          "source": "16",
+          "target": "31",
+          "type": "random_link"
+        },
+        {
+          "source": "28",
+          "target": "5",
+          "type": "random_link"
+        },
+        {
+          "source": "19",
+          "target": "1",
+          "type": "random_link"
+        },
+        {
+          "source": "8",
+          "target": "11",
+          "type": "random_link"
+        },
+        {
+          "source": "24",
+          "target": "20",
+          "type": "random_link"
+        },
+        {
+          "source": "0",
+          "target": "12",
+          "type": "random_link"
+        },
+        {
+          "source": "9",
+          "target": "39",
+          "type": "random_link"
+        },
+        {
+          "source": "41",
+          "target": "28",
+          "type": "random_link"
+        },
+        {
+          "source": "39",
+          "target": "1",
+          "type": "random_link"
+        },
+        {
+          "source": "23",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "13",
+          "target": "34",
+          "type": "random_link"
+        },
+        {
+          "source": "34",
+          "target": "11",
+          "type": "random_link"
+        },
+        {
+          "source": "40",
+          "target": "37",
+          "type": "random_link"
+        },
+        {
+          "source": "2",
+          "target": "4",
+          "type": "random_link"
+        },
+        {
+          "source": "10",
+          "target": "33",
+          "type": "random_link"
+        },
+        {
+          "source": "24",
+          "target": "13",
+          "type": "random_link"
+        },
+        {
+          "source": "14",
+          "target": "15",
+          "type": "random_link"
+        },
+        {
+          "source": "19",
+          "target": "6",
+          "type": "random_link"
+        },
+        {
+          "source": "7",
+          "target": "19",
+          "type": "random_link"
+        },
+        {
+          "source": "6",
+          "target": "25",
+          "type": "random_link"
+        },
+        {
+          "source": "24",
+          "target": "11",
+          "type": "random_link"
+        },
+        {
+          "source": "27",
+          "target": "8",
+          "type": "random_link"
+        },
+        {
+          "source": "35",
+          "target": "16",
+          "type": "random_link"
+        },
+        {
+          "source": "36",
+          "target": "10",
+          "type": "random_link"
+        },
+        {
+          "source": "23",
+          "target": "35",
+          "type": "random_link"
+        },
+        {
+          "source": "2",
+          "target": "26",
+          "type": "random_link"
+        },
+        {
+          "source": "32",
+          "target": "8",
+          "type": "random_link"
+        },
+        {
+          "source": "4",
+          "target": "31",
+          "type": "random_link"
+        },
+        {
+          "source": "23",
+          "target": "41",
+          "type": "random_link"
+        },
+        {
+          "source": "19",
+          "target": "30",
+          "type": "random_link"
+        },
+        {
+          "source": "18",
+          "target": "41",
+          "type": "random_link"
+        },
+        {
+          "source": "38",
+          "target": "30",
+          "type": "random_link"
+        },
+        {
+          "source": "22",
+          "target": "34",
+          "type": "random_link"
+        },
+        {
+          "source": "2",
+          "target": "28",
+          "type": "random_link"
+        },
+        {
+          "source": "21",
+          "target": "1",
+          "type": "random_link"
+        },
+        {
+          "source": "3",
+          "target": "2",
+          "type": "random_link"
+        },
+        {
+          "source": "17",
+          "target": "7",
+          "type": "random_link"
+        },
+        {
+          "source": "26",
+          "target": "4",
+          "type": "clustering_link"
+        },
+        {
+          "source": "11",
+          "target": "32",
+          "type": "clustering_link"
+        },
+        {
+          "source": "19",
+          "target": "17",
+          "type": "clustering_link"
+        },
+        {
+          "source": "2",
+          "target": "41",
+          "type": "clustering_link"
+        },
+        {
+          "source": "13",
+          "target": "11",
+          "type": "clustering_link"
+        },
+        {
+          "source": "11",
+          "target": "20",
+          "type": "clustering_link"
+        },
+        {
+          "source": "42",
+          "target": "16",
+          "type": "clustering_link"
+        },
+        {
+          "source": "31",
+          "target": "2",
+          "type": "clustering_link"
+        },
+        {
+          "source": "25",
+          "target": "0",
+          "type": "clustering_link"
+        }
+      ]
+    },
+    "doubled_size_graph_description": "The typical network, originally with 28 nodes, has been scaled to approximately 43 nodes while notionally maintaining the underlying network profile (Centrality Score: 2.0, Connectivity Score: 1.5, Clustering Score: 4.0). This scaling scenario presents the following potential implications and considerations:\n\n- **Low Connectivity upon Scaling:**\n  - *Potential Pros:* Growth offers a clear imperative and opportunity to strategically build new, essential connections, addressing pre-existing gaps. Allows for more controlled and phased integration of new segments, potentially forming specialized sub-networks.\n  - *Potential Cons:* Significant risk of increased fragmentation and the formation of isolated groups if new links aren't intentionally and actively fostered. Silos may become more pronounced, severely hindering collaboration and information sharing across the expanded organization.\n- **Low Centrality upon Scaling:**\n  - *Potential Pros:* The network is inherently more resilient to single points of failure during growth. Decision-making, innovation, and problem-solving can emerge from multiple areas, fostering adaptability.\n  - *Potential Cons:* Coordinating a unified strategy for growth, resource allocation, and maintaining consistent standards can be very challenging. Ensuring consistent and equitable information flow across all parts of the larger, distributed network requires careful attention and robust communication protocols.\n- **High Clustering upon Scaling:**\n  - *Potential Pros:* Strong existing clusters or communities of practice can effectively onboard and integrate new members into cohesive subgroups, maintaining local efficiency, trust, and specialized knowledge sharing.\n  - *Potential Cons:* Significant risk of increased siloing and 'tribalism' between clusters as the network grows. Inter-cluster communication, collaboration, and knowledge transfer might become more difficult without dedicated bridging roles and mechanisms, hindering broader organizational goals.\n\nIn summary, scaling any network structure requires proactive strategies to manage these emergent dynamics. The goal is to ensure that growth is sustainable and enhances, rather than detracts from, the organization's overall effectiveness, communication, and collaboration capabilities."
+  }
+]
