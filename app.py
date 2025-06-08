@@ -253,47 +253,47 @@ def community_network_assessment():
         if key not in st.session_state:
             st.session_state[key] = None 
 
-    st.header("Part A – Overall Connectivity")
-    connectivity_options = {
-        "Very low: Only a few communicate.": 1,
-        "Low: Some members communicate, but not regularly.": 2,
-        "Medium: Regular communication occurs between most members.": 3,
-        "High: Most members communicate frequently.": 4,
-        "Very high: All members communicate consistently.": 5,
+    st.header("Part A – Connectivity and Centrality")
+    central_connectors_options = {
+        "Very few: Almost no individuals act as central connectors.": 1,
+        "Few: Some individuals occasionally bridge different parts of the network.": 2,
+        "Moderate number: Several individuals are recognized for connecting disparate groups.": 3,
+        "Many: Numerous individuals actively bridge and connect different network segments.": 4,
+        "Very many: Network connectivity heavily relies on a wide array of central connectors.": 5,
     }
-    st.subheader("How often does communication occur between all members of the organization?")
+    st.subheader("How many individuals act as central connectors, bridging different parts of the network?")
     st.radio(
-        "Select the frequency:", list(connectivity_options.keys()), 
-        index=radio_button_keys_indices["conn_freq_radio"], 
-        key="conn_freq_radio" 
-    )
-    
-    information_flow_options = {
-        "Very low: Information flow is very limited.": 1,
-        "Low: Information flow occurs occasionally and is only partially accessible.": 2,
-        "Medium: Information flow is consistent, but some gaps exist.": 3,
-        "High: Information flow is good, and most members can access information.": 4,
-        "Very high: Information flow is seamless, and everyone receives consistent access.": 5,
-    }
-    st.subheader("To what extent do existing processes enable continuous and accessible information flow?")
-    st.radio(
-        "Select the extent:", list(information_flow_options.keys()), 
-        index=radio_button_keys_indices["info_flow_radio"], 
-        key="info_flow_radio"
+        "Select the number:", list(central_connectors_options.keys()),
+        index=radio_button_keys_indices["cent_conn_radio"],
+        key="cent_conn_radio"
     )
 
-    spontaneous_communication_options = {
-        "Almost none occurs: organization members communicate only within formal activities.": 1,
-        "Occurs minimally: Limited spontaneous communication occurs in exceptional cases.": 2,
-        "Occurs moderately: Some members communicate spontaneously, but not consistently.": 3,
-        "Occurs extensively: Most communicate naturally, but formal initiatives are needed sometimes.": 4,
-        "Occurs naturally and consistently: Spontaneous communication is integral to daily activity.": 5,
+    information_brokerage_options = {
+        "Very ineffective: Brokers are rare, and information flow between groups is poor.": 1,
+        "Ineffective: Some brokerage occurs, but it is slow and often misses key information.": 2,
+        "Moderately effective: Brokers facilitate decent information flow, but with delays or gaps.": 3,
+        "Effective: Brokers ensure timely and relevant information reaches different groups.": 4,
+        "Very effective: Brokerage is a strong asset, ensuring rapid and comprehensive information exchange.": 5,
     }
-    st.subheader("To what extent does spontaneous communication occur between members?")
+    st.subheader("How effective are these connectors at information brokerage between groups?")
     st.radio(
-        "Select the extent:", list(spontaneous_communication_options.keys()), 
-        index=radio_button_keys_indices["spont_comm_radio"], 
-        key="spont_comm_radio"
+        "Select the effectiveness:", list(information_brokerage_options.keys()),
+        index=radio_button_keys_indices["info_brok_radio"],
+        key="info_brok_radio"
+    )
+    
+    decision_making_influence_options = {
+        "Very little: Decisions are made in isolation with minimal input from connectors.": 1,
+        "Little: Connectors have some input, but their influence on decisions is limited.": 2,
+        "Moderate: Connectors are consulted, and their input moderately influences decisions.": 3,
+        "Significant: Connectors play a key role in shaping and influencing decisions.": 4,
+        "Very significant: Connectors are integral to the decision-making process; their insights are crucial.": 5,
+    }
+    st.subheader("How much influence do these central individuals have on decision-making processes?")
+    st.radio(
+        "Select the influence:", list(decision_making_influence_options.keys()),
+        index=radio_button_keys_indices["dec_mak_radio"],
+        key="dec_mak_radio"
     )
 
     st.header("Part B – Clustering")
@@ -340,47 +340,49 @@ def community_network_assessment():
     )
     
     st.header("Part C – Centrality")
-    central_connectors_options = {
-        "Very few: Almost no individuals act as central connectors.": 1,
-        "Few: Some individuals occasionally bridge different parts of the network.": 2,
-        "Moderate number: Several individuals are recognized for connecting disparate groups.": 3,
-        "Many: Numerous individuals actively bridge and connect different network segments.": 4,
-        "Very many: Network connectivity heavily relies on a wide array of central connectors.": 5,
+    options_1 = {
+        "Most decisions are made across many places and in various ways (high decentralization).": 1,
+        "Decisions are mostly made in a few centers, but some decentralization exists.": 2,
+        "There is a balance between central decision points and decentralized decisions.": 3,
+        "Most decisions are made in one place or by a small group of centers.": 4,
+        "Almost all decisions are made in one place only (high centralization).": 5,
     }
-    st.subheader("How many individuals act as central connectors, bridging different parts of the network?")
+    st.subheader("To what extent are significant decisions made in one place or by a small group only?")
     st.radio(
-        "Select the number:", list(central_connectors_options.keys()),
-        index=radio_button_keys_indices["cent_conn_radio"],
-        key="cent_conn_radio"
+        "Select the extent:", list(options_1.keys()),
+        index=radio_button_keys_indices["work_org_radio"],
+        key="work_org_radio"
     )
 
-    information_brokerage_options = {
-        "Very ineffective: Brokers are rare, and information flow between groups is poor.": 1,
-        "Ineffective: Some brokerage occurs, but it is slow and often misses key information.": 2,
-        "Moderately effective: Brokers facilitate decent information flow, but with delays or gaps.": 3,
-        "Effective: Brokers ensure timely and relevant information reaches different groups.": 4,
-        "Very effective: Brokerage is a strong asset, ensuring rapid and comprehensive information exchange.": 5,
+    options_2 = {
+        "Authority is widely distributed among various teams and individuals.": 1,
+        "Authority is concentrated to a small extent, with a few influential managers.": 2,
+        "Authority is moderately concentrated.": 3,
+        "Authority is mostly concentrated in a few managers.": 4,
+        "Authority is almost entirely concentrated in one manager or a very small group.": 5,
     }
-    st.subheader("How effective are these connectors at information brokerage between groups?")
+    st.subheader("How much authority for significant decision-making is concentrated in the hands of a few managers?")
     st.radio(
-        "Select the effectiveness:", list(information_brokerage_options.keys()),
-        index=radio_button_keys_indices["info_brok_radio"],
-        key="info_brok_radio"
+        "Select the extent:", list(options_2.keys()),
+        index=radio_button_keys_indices["work_org_radio"],
+        key="work_org_radio"
     )
-    
-    decision_making_influence_options = {
-        "Very little: Decisions are made in isolation with minimal input from connectors.": 1,
-        "Little: Connectors have some input, but their influence on decisions is limited.": 2,
-        "Moderate: Connectors are consulted, and their input moderately influences decisions.": 3,
-        "Significant: Connectors play a key role in shaping and influencing decisions.": 4,
-        "Very significant: Connectors are integral to the decision-making process; their insights are crucial.": 5,
+
+
+    options_3 = {
+        "No dependence at all; I can make decisions independently.": 1,
+        "Little dependence; approval is sometimes required.": 2,
+        "Moderate dependence on a central point for decision-making.": 3,
+        "High dependence on a central point; most decisions go through it.": 4,
+        "Full dependence on a central point for decision-making in all areas.": 5,
     }
-    st.subheader("How much influence do these central individuals have on decision-making processes?")
+    st.subheader("To what extent does your decision-making depend on a single central point?")
     st.radio(
-        "Select the influence:", list(decision_making_influence_options.keys()),
-        index=radio_button_keys_indices["dec_mak_radio"],
-        key="dec_mak_radio"
+        "Select the extent:", list(options_3.keys()),
+        index=radio_button_keys_indices["work_org_radio"],
+        key="work_org_radio"
     )
+
 
     if st.button("Calculate Network Scores & See Typical Visualization", key="submit_questionnaire"):
         st.session_state.questionnaire_submitted = True
