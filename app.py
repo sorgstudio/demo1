@@ -245,6 +245,7 @@ def community_network_assessment():
 
     # --- Initialize session state for radio button selections if they don't exist ---
     radio_button_keys_indices = {
+        "spont_comm_radio": 2, "conn_freq_radio": 2, "info_flow_radio": 2,
         "cent_conn_radio": 2, "info_brok_radio": 2, "dec_mak_radio": 2,
         "work_org_radio": 2, "group_trans_radio": 2, "know_share_radio": 2,
         "opc1_radio": 2, "opc2_radio": 2, "opc3_radio": 2
@@ -254,6 +255,50 @@ def community_network_assessment():
             st.session_state[key] = None 
 
     st.header("Part A – Connectivity and Centrality")
+    
+    connectivity_options = {
+        "Very low: Only a few communicate.": 1,
+        "Low: Some members communicate, but not regularly.": 2,
+        "Medium: Regular communication occurs between most members.": 3,
+        "High: Most members communicate frequently.": 4,
+        "Very high: All members communicate consistently.": 5,
+    }
+    st.subheader("How often does communication occur between all members of the organization?")
+    st.radio(
+        "Select the frequency:", list(connectivity_options.keys()), 
+        index=radio_button_keys_indices["conn_freq_radio"], 
+        key="conn_freq_radio" 
+    )
+    
+    information_flow_options = {
+        "Very low: Information flow is very limited.": 1,
+        "Low: Information flow occurs occasionally and is only partially accessible.": 2,
+        "Medium: Information flow is consistent, but some gaps exist.": 3,
+        "High: Information flow is good, and most members can access information.": 4,
+        "Very high: Information flow is seamless, and everyone receives consistent access.": 5,
+    }
+    st.subheader("To what extent do existing processes enable continuous and accessible information flow?")
+    st.radio(
+        "Select the extent:", list(information_flow_options.keys()), 
+        index=radio_button_keys_indices["info_flow_radio"], 
+        key="info_flow_radio"
+    )
+
+    spontaneous_communication_options = {
+        "Almost none occurs: organization members communicate only within formal activities.": 1,
+        "Occurs minimally: Limited spontaneous communication occurs in exceptional cases.": 2,
+        "Occurs moderately: Some members communicate spontaneously, but not consistently.": 3,
+        "Occurs extensively: Most communicate naturally, but formal initiatives are needed sometimes.": 4,
+        "Occurs naturally and consistently: Spontaneous communication is integral to daily activity.": 5,
+    }
+    st.subheader("To what extent does spontaneous communication occur between members?")
+    st.radio(
+        "Select the extent:", list(spontaneous_communication_options.keys()), 
+        index=radio_button_keys_indices["spont_comm_radio"], 
+        key="spont_comm_radio"
+    )
+
+
     central_connectors_options = {
         "Very few: Almost no individuals act as central connectors.": 1,
         "Few: Some individuals occasionally bridge different parts of the network.": 2,
@@ -339,7 +384,7 @@ def community_network_assessment():
         key="know_share_radio"
     )
     
-    st.header("Part C – Centrality")
+    st.header("Part C – Centralization")
     options_1 = {
         "Most decisions are made across many places and in various ways (high decentralization).": 1,
         "Decisions are mostly made in a few centers, but some decentralization exists.": 2,
@@ -387,6 +432,9 @@ def community_network_assessment():
     if st.button("Calculate Network Scores & See Typical Visualization", key="submit_questionnaire"):
         st.session_state.questionnaire_submitted = True
         
+        st.session_state.persisted_conn_freq_radio = st.session_state.conn_freq_radio
+        st.session_state.persisted_info_flow_radio = st.session_state.info_flow_radio
+        st.session_state.persisted_spont_comm_radio = st.session_state.spont_comm_radio
         st.session_state.persisted_connectivity_frequency = st.session_state.cent_conn_radio
         st.session_state.persisted_information_flow = st.session_state.info_brok_radio
         st.session_state.persisted_spontaneous_communication = st.session_state.dec_mak_radio
@@ -397,9 +445,12 @@ def community_network_assessment():
         st.session_state.persisted_information_brokerage = st.session_state.opc2_radio
         st.session_state.persisted_decision_making_influence = st.session_state.opc3_radio
 
-        s_connectivity_frequency = options_1[st.session_state.opc1_radio]
-        s_information_flow = options_2[st.session_state.opc2_radio]
-        s_spontaneous_communication = options_3[st.session_state.opc3_radio]
+        s_connectivity_frequency = connectivity_options[st.session_state.conn_freq_radio]
+        s_information_flow = information_flow_options[st.session_state.info_flow_radio]
+        s_spontaneous_communication = spontaneous_communication_options[st.session_state.spont_comm_radio]
+        s_opc1 = options_1[st.session_state.opc1_radio]
+        s_opc2 = options_2[st.session_state.opc2_radio]
+        s_opc3 = options_3[st.session_state.opc3_radio]
         s_workgroup_organization = workgroup_organization_options[st.session_state.work_org_radio]
         s_group_transparency = group_transparency_options[st.session_state.group_trans_radio]
         s_knowledge_sharing = knowledge_sharing_options[st.session_state.know_share_radio]
@@ -407,14 +458,14 @@ def community_network_assessment():
         s_information_brokerage = information_brokerage_options[st.session_state.info_brok_radio]
         s_decision_making_influence = decision_making_influence_options[st.session_state.dec_mak_radio]
         
-        final_connectivity_score = (s_connectivity_frequency + s_information_flow + s_spontaneous_communication) / 3
+        final_connectivity_score = (s_connectivity_frequency + s_information_flow + s_spontaneous_communication+s_central_connectors + s_information_brokerage + s_decision_making_influence) / 8
         final_clustering_score = (s_workgroup_organization + s_group_transparency + s_knowledge_sharing) / 3
-        final_centrality_score = (s_central_connectors + s_information_brokerage + s_decision_making_influence) / 3
+        final_centralization_score = (s_opc1 + s_opc2 + s_opc3) / 3
 
         st.session_state.final_scores = {
             "Connectivity": final_connectivity_score,
             "Clustering": final_clustering_score,
-            "Centrality": final_centrality_score,
+            "Centralization": final_centralization_score,
         }
         if 'simulation_run' in st.session_state: del st.session_state.simulation_run 
         if 'current_simulation_item' in st.session_state: del st.session_state.current_simulation_item
@@ -423,9 +474,9 @@ def community_network_assessment():
         scores = st.session_state.final_scores
         st.markdown("---")
         st.header("Step 2: Calculated Network Scores")
-        st.metric(label="Overall Connectivity Score", value=f"{scores['Connectivity']:.2f} / 5")
+        st.metric(label="Overall Connectivity & Centrality Score", value=f"{scores['Connectivity']:.2f} / 5")
         st.metric(label="Overall Clustering Score", value=f"{scores['Clustering']:.2f} / 5")
-        st.metric(label="Overall Centrality Score", value=f"{scores['Centrality']:.2f} / 5")
+        st.metric(label="Overall Centralization Score", value=f"{scores['Centralization']:.2f} / 5")
         
         st.markdown("**Selected Options:**")
         expander = st.expander("View your selections from the questionnaire")
@@ -465,7 +516,7 @@ def community_network_assessment():
         if simulation_data:
             matched_item = find_matching_simulation_item(
                 simulation_data,
-                scores["Centrality"],
+                scores["Centralization"],
                 scores["Connectivity"],
                 scores["Clustering"]
             )
