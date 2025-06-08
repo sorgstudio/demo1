@@ -247,7 +247,7 @@ def community_network_assessment():
     radio_button_keys_indices = {
         "conn_freq_radio": 2, "info_flow_radio": 2, "spont_comm_radio": 2,
         "work_org_radio": 2, "group_trans_radio": 2, "know_share_radio": 2,
-        "cent_conn_radio": 2, "info_brok_radio": 2, "dec_mak_radio": 2
+        "opc1_radio": 2, "opc2_radio": 2, "opc3_radio": 2
     }
     for key, default_index in radio_button_keys_indices.items():
         if key not in st.session_state:
@@ -350,7 +350,7 @@ def community_network_assessment():
     st.subheader("To what extent are significant decisions made in one place or by a small group only?")
     st.radio(
         "Select the extent:", list(options_1.keys()),
-        index=radio_button_keys_indices["work_org_radio"],
+        index=radio_button_keys_indices["opc1_radio"],
         key="work_org_radio"
     )
 
@@ -364,7 +364,7 @@ def community_network_assessment():
     st.subheader("How much authority for significant decision-making is concentrated in the hands of a few managers?")
     st.radio(
         "Select the extent:", list(options_2.keys()),
-        index=radio_button_keys_indices["work_org_radio"],
+        index=radio_button_keys_indices["opc2_radio"],
         key="work_org_radio"
     )
 
@@ -379,7 +379,7 @@ def community_network_assessment():
     st.subheader("To what extent does your decision-making depend on a single central point?")
     st.radio(
         "Select the extent:", list(options_3.keys()),
-        index=radio_button_keys_indices["work_org_radio"],
+        index=radio_button_keys_indices["opc3_radio"],
         key="work_org_radio"
     )
 
