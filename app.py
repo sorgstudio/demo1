@@ -350,8 +350,8 @@ def community_network_assessment():
     st.subheader("To what extent are significant decisions made in one place or by a small group only?")
     st.radio(
         "Select the extent:", list(options_1.keys()),
-        index=radio_button_keys_indices["opc1_radio"],
-        key="work_org_radio"
+        index=radio_button_keys_indices["opc_radio"],
+        key="opc1_radio"
     )
 
     options_2 = {
@@ -364,8 +364,8 @@ def community_network_assessment():
     st.subheader("How much authority for significant decision-making is concentrated in the hands of a few managers?")
     st.radio(
         "Select the extent:", list(options_2.keys()),
-        index=radio_button_keys_indices["opc2_radio"],
-        key="work_org_radio"
+        index=radio_button_keys_indices["opc_radio"],
+        key="opc2_radio"
     )
 
 
@@ -379,8 +379,8 @@ def community_network_assessment():
     st.subheader("To what extent does your decision-making depend on a single central point?")
     st.radio(
         "Select the extent:", list(options_3.keys()),
-        index=radio_button_keys_indices["opc3_radio"],
-        key="work_org_radio"
+        index=radio_button_keys_indices["opc_radio"],
+        key="opc3_radio"
     )
 
 
@@ -393,17 +393,17 @@ def community_network_assessment():
         st.session_state.persisted_workgroup_organization = st.session_state.work_org_radio
         st.session_state.persisted_group_transparency = st.session_state.group_trans_radio
         st.session_state.persisted_knowledge_sharing = st.session_state.know_share_radio
-        st.session_state.persisted_central_connectors = st.session_state.cent_conn_radio
+        st.session_state.persisted_central_connectors = st.session_state.opc_radio
         st.session_state.persisted_information_brokerage = st.session_state.info_brok_radio
         st.session_state.persisted_decision_making_influence = st.session_state.dec_mak_radio
 
-        s_connectivity_frequency = connectivity_options[st.session_state.conn_freq_radio]
-        s_information_flow = information_flow_options[st.session_state.info_flow_radio]
-        s_spontaneous_communication = spontaneous_communication_options[st.session_state.spont_comm_radio]
-        s_workgroup_organization = workgroup_organization_options[st.session_state.work_org_radio]
-        s_group_transparency = group_transparency_options[st.session_state.group_trans_radio]
+        s_connectivity_frequency = options_1[st.session_state.conn_freq_radio]
+        s_information_flow = options_2[st.session_state.info_flow_radio]
+        s_spontaneous_communication = options_3[st.session_state.spont_comm_radio]
+        s_workgroup_organization = options_1[st.session_state.work_org_radio]
+        s_group_transparency = options_2[st.session_state.group_trans_radio]
         s_knowledge_sharing = knowledge_sharing_options[st.session_state.know_share_radio]
-        s_central_connectors = central_connectors_options[st.session_state.cent_conn_radio]
+        s_central_connectors = central_connectors_options[st.session_state.opc_radio]
         s_information_brokerage = information_brokerage_options[st.session_state.info_brok_radio]
         s_decision_making_influence = decision_making_influence_options[st.session_state.dec_mak_radio]
         
