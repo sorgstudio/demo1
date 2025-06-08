@@ -487,7 +487,8 @@ def community_network_assessment():
                     st.info("Doubled size typical graph data is not available for this selection.")
                 # --- End Display Doubled Size Typical Graph ---
 
-
+                st.markdown("---")
+                st.header("Run Simulation And See Resulting Growth Affects")
                 if st.button("Run Simulation & Show Resulting Network Topologies", key="run_simulation_button"):
                     st.session_state.simulation_run = True
                     st.session_state.current_simulation_item = matched_item 
