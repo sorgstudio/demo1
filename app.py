@@ -458,7 +458,7 @@ def community_network_assessment():
         s_information_brokerage = information_brokerage_options[st.session_state.info_brok_radio]
         s_decision_making_influence = decision_making_influence_options[st.session_state.dec_mak_radio]
         
-        final_connectivity_score = (s_connectivity_frequency + s_information_flow + s_spontaneous_communication+s_central_connectors + s_information_brokerage + s_decision_making_influence) / 8
+        final_connectivity_score = (s_connectivity_frequency + s_information_flow + s_spontaneous_communication+s_central_connectors + s_information_brokerage + s_decision_making_influence) / 6
         final_clustering_score = (s_workgroup_organization + s_group_transparency + s_knowledge_sharing) / 3
         final_centralization_score = (s_opc1 + s_opc2 + s_opc3) / 3
 
@@ -474,9 +474,9 @@ def community_network_assessment():
         scores = st.session_state.final_scores
         st.markdown("---")
         st.header("Step 2: Calculated Network Scores")
-        st.metric(label="Overall Connectivity & Centrality Score", value=f"{scores['Connectivity']:.2f} / 5")
-        st.metric(label="Overall Clustering Score", value=f"{scores['Clustering']:.2f} / 5")
-        st.metric(label="Overall Centralization Score", value=f"{scores['Centralization']:.2f} / 5")
+        st.metric(label="Overall Connectivity & Centrality Score", value=f"{scores['Connectivity']:.2f}")
+        st.metric(label="Overall Clustering Score", value=f"{scores['Clustering']:.2f}")
+        st.metric(label="Overall Centralization Score", value=f"{scores['Centralization']:.2f}")
         
         st.markdown("**Selected Options:**")
         expander = st.expander("View your selections from the questionnaire")
@@ -515,10 +515,10 @@ def community_network_assessment():
 
         if simulation_data:
             matched_item = find_matching_simulation_item(
-                simulation_data,
-                scores["Centralization"],
+                simulation_data,                
                 scores["Connectivity"],
-                scores["Clustering"]
+                scores["Clustering"],
+                scores["Centralization"],
             )
 
             if matched_item:
